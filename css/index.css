@@ -187,36 +187,208 @@ table {
 }
 .inner-container {
   margin: 0 auto;
-  width: 45%;
+  width: 46%;
   margin-top: -220px;
 }
-.inner-container .flex-services {
+.inner-container .flex-services-architects {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 100px;
 }
-.inner-container .flex-services .text {
+.inner-container .flex-services-architects .text {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin-top: 30px;
 }
-.inner-container .flex-services .text h2 {
+.inner-container .flex-services-architects .text h2 {
   font-size: 24px;
   font-weight: bold;
   font-family: Roboto, Arial, sans-serif;
   line-height: 50px;
   padding-bottom: 15px;
 }
-.inner-container .flex-services p {
+.inner-container .flex-services-architects p {
   font-size: 16px;
   font-family: Roboto, Arial, sans-serif;
   line-height: 23px;
   padding-bottom: 15px;
 }
-.inner-container .flex-services button {
+.inner-container .flex-services-architects button {
   font-size: 14px;
   width: 33%;
   height: 50px;
   border: 1px solid #222222;
   background: #FFFFFF;
+}
+.inner-container .flex-services-futuristic-designs {
+  display: flex;
+  justify-content: space-evenly;
+}
+.inner-container .flex-services-futuristic-designs .text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 30px;
+  padding-left: 20px;
+}
+.inner-container .flex-services-futuristic-designs .text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 50px;
+  padding-bottom: 15px;
+}
+.inner-container .flex-services-futuristic-designs p {
+  font-size: 16px;
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 23px;
+  padding-bottom: 15px;
+}
+.inner-container .flex-services-futuristic-designs button {
+  font-size: 14px;
+  width: 33%;
+  height: 50px;
+  border: 1px solid #222222;
+  background: #FFFFFF;
+}
+.inner-container .block {
+  padding-bottom: 140px;
+}
+.inner-container .block .recent-projects {
+  font-size: 24px;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: bold;
+  position: relative;
+  top: 90px;
+  left: 10px;
+}
+.inner-container .block .projects {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 610px) {
+  .header-container {
+    margin: 0 auto;
+    width: 53.8%;
+  }
+  .header-container .nav-bar {
+    position: relative;
+    width: 100%;
+    background: #98A4AF;
+    height: 50px;
+    z-index: 2;
+  }
+  .header-container .nav-bar .flex-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  .header-container .nav-bar .flex-nav .company-logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Roboto, Arial, sans-serif;
+    color: #FFFFFF;
+    position: relative;
+    top: 10px;
+  }
+  .header-container .nav-bar .flex-nav .block-div {
+    width: 40%;
+  }
+  .header-container .nav-bar .flex-nav .menu-icon {
+    position: relative;
+    top: 10px;
+  }
+  .header-container .jumbotron-img {
+    max-width: 100%;
+    height: 260px;
+    position: relative;
+    top: -50px;
+    z-index: 1;
+  }
+  .header-container .company-slogan {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 35px;
+    color: #FFFFFF;
+    position: relative;
+    left: 15px;
+    top: -195px;
+    width: 30%;
+    z-index: 3;
+  }
+  .inner-container {
+    margin: 0 auto;
+    width: 49%;
+    margin-top: -220px;
+  }
+  .inner-container .flex-services-architects {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-top: 100px;
+  }
+  .inner-container .flex-services-architects .text {
+    width: 50%;
+    margin-top: 10px;
+    order: 2;
+  }
+  .inner-container .flex-services-architects .text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Roboto, Arial, sans-serif;
+    width: 200%;
+  }
+  .inner-container .flex-services-architects .text p {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 23px;
+    width: 200%;
+  }
+  .inner-container .flex-services-architects .text button {
+    font-size: 14px;
+    width: 33%;
+    height: 50px;
+    border: 1px solid #222222;
+    background: #FFFFFF;
+    width: 200%;
+  }
+  .inner-container .flex-services-architects .design-img {
+    order: 1;
+  }
+  .inner-container .flex-services-futuristic-designs {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: -60px;
+  }
+  .inner-container .flex-services-futuristic-designs .design-img {
+    order: 1;
+  }
+  .inner-container .flex-services-futuristic-designs .text {
+    width: 50%;
+    margin-top: 10px;
+    order: 2;
+  }
+  .inner-container .flex-services-futuristic-designs .text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Roboto, Arial, sans-serif;
+    width: 200%;
+  }
+  .inner-container .flex-services-futuristic-designs .text p {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 23px;
+    width: 200%;
+  }
+  .inner-container .flex-services-futuristic-designs .text button {
+    font-size: 14px;
+    width: 33%;
+    height: 50px;
+    border: 1px solid #222222;
+    background: #FFFFFF;
+    width: 220%;
+    margin-left: -20px;
+  }
 }
