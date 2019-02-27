@@ -58,3 +58,58 @@ table{
 }
 
 /* Your Code Goes Here */
+* {
+  box-sizing: border-box;
+}
+
+.header-container {
+  margin: 0 auto;
+  width: 53.8%;
+  .nav-bar {
+    position: relative;
+    width: 100%;
+    background: #98A4AF;
+    height: 50px;
+    z-index: 2;
+    .flex {
+      display: flex;
+      justify-content: space-around;
+      .company-logo {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: Roboto, Arial, sans-serif;
+        color: #FFFFFF;
+        position: relative;
+        top: 10px;
+      }
+      .block-div {
+        // background: black;
+        width: 40%;
+      }
+      .menu-icon {
+        position: relative;
+        top: 10px;
+        
+      }
+    }
+    
+  }
+  .jumbotron-img {
+    max-width: 100%;
+    position: relative;
+    top: -50px;
+    z-index: 1;
+  }
+  .company-slogan {
+    font-size: 64px;
+    font-weight: bold;
+    font-family: Roboto, Arial, sans-serif;;
+    line-height: 75px;
+    color: #FFFFFF;
+    position: relative;
+    left: 75px;
+    top: -315px;
+    width: 30%;
+    
+  }
+}
