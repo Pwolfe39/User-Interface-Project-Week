@@ -148,11 +148,11 @@ table {
   height: 50px;
   z-index: 2;
 }
-.header-container .nav-bar .flex {
+.header-container .nav-bar .flex-nav {
   display: flex;
   justify-content: space-around;
 }
-.header-container .nav-bar .flex .company-logo {
+.header-container .nav-bar .flex-nav .company-logo {
   font-size: 24px;
   font-weight: bold;
   font-family: Roboto, Arial, sans-serif;
@@ -160,10 +160,10 @@ table {
   position: relative;
   top: 10px;
 }
-.header-container .nav-bar .flex .block-div {
+.header-container .nav-bar .flex-nav .block-div {
   width: 40%;
 }
-.header-container .nav-bar .flex .menu-icon {
+.header-container .nav-bar .flex-nav .menu-icon {
   position: relative;
   top: 10px;
 }
@@ -183,4 +183,40 @@ table {
   left: 75px;
   top: -315px;
   width: 30%;
+  z-index: 3;
+}
+.inner-container {
+  margin: 0 auto;
+  width: 45%;
+  margin-top: -220px;
+}
+.inner-container .flex-services {
+  display: flex;
+  justify-content: space-evenly;
+}
+.inner-container .flex-services .text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 30px;
+}
+.inner-container .flex-services .text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 50px;
+  padding-bottom: 15px;
+}
+.inner-container .flex-services p {
+  font-size: 16px;
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 23px;
+  padding-bottom: 15px;
+}
+.inner-container .flex-services button {
+  font-size: 14px;
+  width: 33%;
+  height: 50px;
+  border: 1px solid #222222;
+  background: #FFFFFF;
 }

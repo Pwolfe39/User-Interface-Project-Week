@@ -71,7 +71,7 @@ table{
     background: #98A4AF;
     height: 50px;
     z-index: 2;
-    .flex {
+    .flex-nav {
       display: flex;
       justify-content: space-around;
       .company-logo {
@@ -103,13 +103,74 @@ table{
   .company-slogan {
     font-size: 64px;
     font-weight: bold;
-    font-family: Roboto, Arial, sans-serif;;
+    font-family: Roboto, Arial, sans-serif;
     line-height: 75px;
     color: #FFFFFF;
     position: relative;
     left: 75px;
     top: -315px;
     width: 30%;
+    z-index: 3;
     
   }
 }
+
+.inner-container {
+  margin: 0 auto;
+  width: 45%;
+  // background: skyblue;
+  margin-top: -220px;
+    .flex-services {
+      display: flex;
+      justify-content: space-evenly;  
+        .text {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+          margin-top: 30px;
+          h2 {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Roboto, Arial, sans-serif;
+            line-height: 50px;
+            padding-bottom: 15px;
+          }
+        }
+          p {
+            font-size: 16px;
+            font-family: Roboto, Arial, sans-serif;;
+            line-height: 23px;
+            padding-bottom: 15px;
+          }
+          button {
+            font-size: 14px;
+            width: 33%;
+            height: 50px;
+            border: 1px solid #222222;
+            background: #FFFFFF;
+          }
+    } 
+}
+
+
+// .flex-services {
+//   display: flex;
+//   .test {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     width: 30%;
+//     .company-name {
+
+//     }
+//     .text {
+
+//     }
+//     .btn {
+      
+//     }
+//     .design-img {
+//       max-width: 100%;
+//     }
+//   }
+    
