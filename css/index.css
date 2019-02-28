@@ -392,6 +392,97 @@ table {
   font-family: Roboto, Arial, sans-serif;
   color: #FFFFFF;
 }
+.header-container {
+  margin: 0 auto;
+  width: 53.8%;
+}
+.header-container .nav-bar {
+  position: relative;
+  width: 100%;
+  background: #98A4AF;
+  height: 50px;
+  z-index: 2;
+}
+.header-container .nav-bar .flex-nav {
+  display: flex;
+  justify-content: space-around;
+}
+.header-container .nav-bar .flex-nav .company-logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
+  color: #FFFFFF;
+  position: relative;
+  top: 10px;
+}
+.header-container .nav-bar .flex-nav .block-div {
+  width: 40%;
+}
+.header-container .nav-bar .flex-nav .menu-icon {
+  position: relative;
+  top: 10px;
+}
+.header-container .jumbotron-img {
+  max-width: 100%;
+  position: relative;
+  top: -50px;
+  z-index: 1;
+}
+.header-container .services {
+  font-size: 64px;
+  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
+  color: #FFFFFF;
+  position: relative;
+  left: 75px;
+  top: -135px;
+  width: 30%;
+  z-index: 3;
+}
+.container {
+  padding-top: 0 0;
+  width: 47%;
+  margin: 0 auto;
+}
+.container .services-header {
+  margin-top: -62px;
+  padding-bottom: 50px;
+}
+.container .services-header .services-intro {
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 25px;
+  width: 95%;
+  margin: 0 auto;
+}
+.container .section-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.container .section-tabs .tab-1 {
+  border: 1px solid #222222;
+  background: #FFF;
+  width: 21%;
+  height: 50px;
+}
+.container .section-tabs .tab-2 {
+  border: 1px solid #222222;
+  background: #FFF;
+  width: 21%;
+  height: 50px;
+}
+.container .section-tabs .tab-3 {
+  border: 1px solid #222222;
+  background: #FFF;
+  width: 21%;
+  height: 50px;
+}
+.container .section-tabs .tab-4 {
+  border: 1px solid #222222;
+  background: #FFF;
+  width: 21%;
+  height: 50px;
+}
 @media (max-width: 610px) {
   .header-container {
     margin: 0 auto;
