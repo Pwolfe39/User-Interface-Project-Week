@@ -535,7 +535,7 @@ table {
   background: #828282;
   height: 250px;
   width: 54%;
-  margin: 0 auto;
+  margin-top: -75px;
   display: flex;
   justify-content: space-evenly;
 }
