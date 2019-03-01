@@ -534,7 +534,7 @@ table {
 .footer {
   background: #828282;
   height: 250px;
-  width: 100%;
+  width: 54%;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -581,7 +581,7 @@ table {
 .copyright-one {
   position: relative;
   margin-top: -25px;
-  margin-left: 860px;
+  margin-left: 847px;
   font-size: 13px;
   font-family: Roboto, Arial, sans-serif;
   color: #FFFFFF;
