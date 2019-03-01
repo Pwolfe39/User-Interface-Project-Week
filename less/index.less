@@ -400,7 +400,6 @@ table{
 }
 
 .container {
-  padding-top: 0 0;
   width: 47%;
   margin: 0 auto;
     .services-header {
@@ -459,9 +458,95 @@ table{
         background: #FFF;
         width: 21%;
         height: 50px;
-      }
-      
+      } 
     }
+    .flex-construction {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 45px;
+          .construction-column {
+            width: 47%;
+            line-height: 25px; 
+              h2 {
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 24px;
+                font-weight: bold;
+                padding-bottom: 15px;
+              }
+              .general-text {
+                font-family: Roboto, Arial, sans-serif;
+                line-height: 27px;
+                padding-bottom: 20px;
+              }
+          }
+          .active {
+            display: block;
+          }
+          .inactive {
+            display: none;
+          }
+          .pre-construction-img {
+            // display: none;
+            max-width: 100%;
+            margin-top: 40px;
+       }
+    }
+}
+.footer {
+  background: #828282;
+  height: 250px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  .column {
+    margin-left: 14px;
+    margin-top: 60px;
+    line-height: 25px;
+    .header-text {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: Roboto, Arial, sans-serif;
+      color: #FFFFFF;
+      padding-bottom: 16px;
+    }
+    .input {
+      width: 100%;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 16px;
+      color: lightgray;
+    }
+    .p-text {
+      color: white;
+      font-size: 12px;
+      font-family: Roboto, Arial, sans-serif;
+    }
+   
+  } 
+  .locations {
+    font-family: Roboto, Arial, sans-serif;
+    color: #FFFFFF;
+    line-height: 24px;
+    margin-top: 62px;
+    margin-right: 30px;
+      .states {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 26px;
+      }
+      .address-info {
+        font-size: 14px;
+      }
+  }
+} 
+.copyright-one {
+  position: relative;
+  margin-top: -25px;
+  margin-left: 860px;
+  font-size: 13px;
+  font-family: Roboto, Arial, sans-serif;
+  color: #FFFFFF;
 }
 
 
