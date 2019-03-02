@@ -166,14 +166,64 @@ table {
 .header-container .nav-bar .flex-nav .menu-icon {
   position: relative;
   top: 10px;
+  cursor: pointer;
 }
-.header-container .jumbotron-img {
+.menu {
+  display: none;
+  position: fixed;
+  margin-top: -50px;
+  width: 53.8%;
+  height: 65.5vh;
+  background: #9AA5AF;
+  border: 1px solid #004D40;
+  color: white;
+  font-family: Roboto, Arial, sans-serif;
+  z-index: 4;
+  opacity: 0.9;
+}
+.menu .company-logo {
+  margin-left: 85px;
+  margin-top: -30px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
+}
+.menu .navigation-system {
+  margin-top: 120px;
+  margin-left: -20px;
+  text-align: center;
+  line-height: 85px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.menu .navigation-system .home-link {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+.menu .navigation-system .services-link {
+  text-decoration: none;
+  color: white;
+}
+.menu .navigation-system .home .services,
+.menu .navigation-system a:hover {
+  color: #222222;
+}
+.menu--open {
+  display: block;
+}
+#menu__close {
+  margin-left: 913px;
+  margin-top: 30px;
+}
+.jumbotron-img {
   max-width: 100%;
   position: relative;
   top: -50px;
   z-index: 1;
 }
-.header-container .company-slogan {
+.company-slogan {
   font-size: 64px;
   font-weight: bold;
   font-family: Roboto, Arial, sans-serif;
