@@ -508,6 +508,9 @@ table {
   justify-content: space-around;
   margin: 0 auto;
 }
+.container .section-tabs button {
+  margin-bottom: 50px;
+}
 .container .section-tabs button:hover {
   background: #222222;
   color: #FFF;
@@ -515,7 +518,7 @@ table {
 .container .section-tabs button:active {
   background: #5E9FB9;
 }
-.container .section-tabs .tab-1 {
+.container .section-tabs .tab {
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1.3px;
@@ -523,63 +526,40 @@ table {
   background: #FFF;
   width: 21%;
   height: 50px;
+  cursor: pointer;
 }
-.container .section-tabs .tab-2 {
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 1.3px;
-  border: 1px solid #222222;
-  background: #FFF;
-  width: 21%;
-  height: 50px;
-}
-.container .section-tabs .tab-3 {
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 1.3px;
-  border: 1px solid #222222;
-  background: #FFF;
-  width: 21%;
-  height: 50px;
-}
-.container .section-tabs .tab-4 {
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 1.3px;
-  border: 1px solid #222222;
-  background: #FFF;
-  width: 21%;
-  height: 50px;
+.container .tabs-link-selected {
+  z-index: 2;
+  background-color: white;
+  color: black;
 }
 .container .flex-construction {
-  display: flex;
+  display: none;
   justify-content: space-evenly;
   margin-top: 45px;
+  padding-bottom: 100px;
 }
-.container .flex-construction .construction-column {
+.container .flex-construction.inactive {
+  display: none;
+}
+.container .tabs-item-selected {
+  display: flex;
+}
+.container .tabs-item-selected .construction-column {
   width: 47%;
   line-height: 25px;
+  margin-top: -40px;
 }
-.container .flex-construction .construction-column h2 {
+.container .tabs-item-selected .construction-column h2 {
   font-family: Roboto, Arial, sans-serif;
   font-size: 24px;
   font-weight: bold;
   padding-bottom: 15px;
 }
-.container .flex-construction .construction-column .general-text {
+.container .tabs-item-selected .construction-column .general-text {
   font-family: Roboto, Arial, sans-serif;
   line-height: 27px;
   padding-bottom: 20px;
-}
-.container .flex-construction .active {
-  display: block;
-}
-.container .flex-construction .inactive {
-  display: none;
-}
-.container .flex-construction .pre-construction-img {
-  max-width: 100%;
-  margin-top: 40px;
 }
 .footer {
   background: #828282;
@@ -588,6 +568,7 @@ table {
   margin-top: -75px;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 30px;
 }
 .footer .column {
   margin-left: 14px;

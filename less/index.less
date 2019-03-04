@@ -485,14 +485,19 @@ table{
       display: flex;
       justify-content: space-around;
       margin: 0 auto;
+      button {
+        margin-bottom: 50px;
+       
+      }
         button:hover {
           background: #222222;
           color: #FFF;
         }
         button:active  {
           background: #5E9FB9;
+          
         }
-       .tab-1 {
+       .tab {
         font-size: 16px;
         font-weight: bold;
         letter-spacing: 1.3px;
@@ -500,66 +505,48 @@ table{
         background: #FFF;
         width: 21%;
         height: 50px;
+        cursor: pointer;
       }
-       .tab-2 {
-        font-size: 16px;
-        font-weight: bold;
-        letter-spacing: 1.3px;
-        border: 1px solid #222222;
-        background: #FFF;
-        width: 21%;
-        height: 50px;
-      }
-       .tab-3 {
-        font-size: 16px;
-        font-weight: bold;
-        letter-spacing: 1.3px;
-        border: 1px solid #222222;
-        background: #FFF;
-        width: 21%;
-        height: 50px;
-      }
-       .tab-4 {
-        font-size: 16px;
-        font-weight: bold;
-        letter-spacing: 1.3px;
-        border: 1px solid #222222;
-        background: #FFF;
-        width: 21%;
-        height: 50px;
-      } 
+    }
+    .tabs-link-selected {
+      z-index: 2;
+      background-color: white;
+      color: black;
     }
     .flex-construction {
-      display: flex;
+      display: none;
       justify-content: space-evenly;
       margin-top: 45px;
-          .construction-column {
-            width: 47%;
-            line-height: 25px; 
-              h2 {
-                font-family: Roboto, Arial, sans-serif;
-                font-size: 24px;
-                font-weight: bold;
-                padding-bottom: 15px;
-              }
-              .general-text {
-                font-family: Roboto, Arial, sans-serif;
-                line-height: 27px;
-                padding-bottom: 20px;
-              }
-          }
-          .active {
-            display: block;
-          }
-          .inactive {
-            display: none;
-          }
-          .pre-construction-img {
-            // display: none;
-            max-width: 100%;
-            margin-top: 40px;
-       }
+      padding-bottom: 100px;
+      // background: lightblue;
+      
+      
+      &.inactive {
+        display: none;
+      }
     }
+    .tabs-item-selected {
+      display: flex;
+      .construction-column {
+        width: 47%;
+        // display: inline-block;
+        line-height: 25px; 
+        margin-top: -40px;
+          h2 {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            padding-bottom: 15px;
+          }
+          .general-text {
+            font-family: Roboto, Arial, sans-serif;
+            line-height: 27px;
+            padding-bottom: 20px;
+          }
+      }
+    }
+    
+    
 }
 .footer {
   background: #828282;
@@ -569,6 +556,7 @@ table{
   // margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 30px;
   
   .column {
     margin-left: 14px;
