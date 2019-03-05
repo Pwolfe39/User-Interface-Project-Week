@@ -800,6 +800,104 @@ table {
     color: #FFFFFF;
   }
 }
+.header-container {
+  margin: 0 auto;
+  width: 53.9%;
+}
+.header-container .nav-bar {
+  position: relative;
+  width: 100%;
+  background: #98A4AF;
+  height: 50px;
+  z-index: 2;
+}
+.header-container .nav-bar .flex-nav {
+  display: flex;
+  justify-content: space-around;
+}
+.header-container .nav-bar .flex-nav .company-logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
+  color: #FFFFFF;
+  position: relative;
+  top: 10px;
+}
+.header-container .nav-bar .flex-nav .block-div {
+  width: 40%;
+}
+.header-container .nav-bar .flex-nav .menu-icon {
+  position: relative;
+  top: 10px;
+}
+.header-container .jumbotron-img {
+  max-width: 100%;
+  position: relative;
+  top: -50px;
+  z-index: 1;
+}
+.header-container .contact-intro {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
+  letter-spacing: 1px;
+  position: relative;
+  color: #FFFFFF;
+  left: 92px;
+  top: -138px;
+  width: 30%;
+  z-index: 3;
+}
+.container {
+  width: 45%;
+}
+.container .in-touch-section {
+  line-height: 45px;
+  margin-top: -74px;
+}
+.container .in-touch-section .contact-invite {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
+  letter-spacing: 0.4px;
+  padding-bottom: 50px;
+}
+.container .in-touch-section .input {
+  width: 48.2%;
+  padding: 10px;
+  border-radius: 4px;
+  color: #98A4AF;
+  border: 1px solid lightgray;
+}
+.container .in-touch-section .privacy-text {
+  color: #98A4AF;
+  font-size: 12px;
+  font-family: Roboto, Arial, sans-serif;
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
+.container .in-touch-section .form-text {
+  font-family: Roboto, Arial, sans-serif;
+  margin-top: -25px;
+}
+.container .in-touch-section .select-form {
+  margin-bottom: 40px;
+}
+.container .in-touch-section .select-form #building-selections {
+  width: 48.2%;
+  padding-top: 20px;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+}
+.container .in-touch-section #text-area-form .text-area {
+  width: 50%;
+  height: 140px;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+}
+.container .in-touch-section #radio-form {
+  background: black;
+}
 @media (max-width: 610px) {
   .header-container {
     margin: 0 auto;
