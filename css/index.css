@@ -133,17 +133,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Your Code Goes Here */
 * {
   box-sizing: border-box;
 }
 .header-container {
-  margin: 0 auto;
-  width: 53.8%;
+  max-width: 1000px;
+  min-width: 100%;
 }
 .header-container .nav-bar {
   position: relative;
-  width: 100%;
+  width: 50%;
   background: #98A4AF;
   height: 50px;
   z-index: 2;
@@ -159,6 +158,7 @@ table {
   color: #FFFFFF;
   position: relative;
   top: 10px;
+  left: 244px;
 }
 .header-container .nav-bar .flex-nav .block-div {
   width: 40%;
@@ -166,14 +166,17 @@ table {
 .header-container .nav-bar .flex-nav .menu-icon {
   position: relative;
   top: 10px;
+  right: 200px;
   cursor: pointer;
 }
+/* Navigation System */
 .menu {
   display: none;
   position: fixed;
   margin-top: -50px;
-  width: 53.8%;
-  height: 65.5vh;
+  max-width: 1000vw;
+  width: 100%;
+  height: 100vh;
   background: #9AA5AF;
   border: 1px solid #004D40;
   color: white;
@@ -182,7 +185,7 @@ table {
   opacity: 0.9;
 }
 .menu .company-logo {
-  margin-left: 85px;
+  margin-left: 410px;
   margin-top: -30px;
   font-size: 24px;
   font-weight: bold;
@@ -214,14 +217,19 @@ table {
   display: block;
 }
 #menu__close {
-  margin-left: 913px;
-  margin-top: 30px;
+  position: relative;
+  margin-left: 1500px;
+  margin-top: 10px;
 }
 .jumbotron-img {
-  max-width: 100%;
+  max-width: 600px;
+  width: 100%;
+  min-width: 100px;
+  height: auto;
   position: relative;
   top: -50px;
   z-index: 1;
+  object-fit: fill;
 }
 .company-slogan {
   font-size: 64px;
@@ -230,20 +238,22 @@ table {
   line-height: 75px;
   color: #FFFFFF;
   position: relative;
-  left: 75px;
-  top: -315px;
+  left: 410px;
+  top: -374px;
   width: 30%;
   z-index: 3;
 }
 .inner-container {
   margin: 0 auto;
-  width: 46%;
+  width: 58%;
   margin-top: -220px;
 }
 .inner-container .flex-services-architects {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 100px;
+  padding-left: -300px;
+  margin: 0 auto;
 }
 .inner-container .flex-services-architects .text {
   display: flex;
@@ -273,7 +283,7 @@ table {
 }
 .inner-container .flex-services-futuristic-designs {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .inner-container .flex-services-futuristic-designs .text {
   display: flex;
@@ -316,7 +326,13 @@ table {
 .inner-container .projects {
   padding-bottom: 80px;
 }
-.inner-container .projects .villas-header {
+.inner-container .projects .villas-img {
+  height: auto;
+  max-width: 1000px;
+  width: 100%;
+  margin-left: 50px;
+}
+.inner-container .projects .project-header {
   padding: 38px 57px;
   font-size: 24px;
   font-family: Roboto, Arial, sans-serif;
@@ -325,7 +341,7 @@ table {
   position: relative;
   display: inline-block;
   top: -57px;
-  left: 547px;
+  left: 730px;
 }
 .inner-container .projects .projects-text p {
   font-family: Roboto, Arial, sans-serif;
@@ -339,9 +355,15 @@ table {
   color: #222222;
 }
 .inner-container .projects-outskirts {
-  padding-bottom: 87px;
+  padding-bottom: 80px;
 }
-.inner-container .projects-outskirts .villas-header {
+.inner-container .projects-outskirts .villas-img {
+  height: auto;
+  max-width: 1000px;
+  width: 100%;
+  margin-left: 50px;
+}
+.inner-container .projects-outskirts .project-header {
   padding: 38px 57px;
   font-size: 24px;
   font-family: Roboto, Arial, sans-serif;
@@ -350,6 +372,7 @@ table {
   position: relative;
   display: inline-block;
   top: -57px;
+  left: 50px;
 }
 .inner-container .projects-outskirts .projects-text p {
   font-family: Roboto, Arial, sans-serif;
@@ -365,7 +388,13 @@ table {
 .inner-container .projects-the-blocks {
   padding-bottom: 76px;
 }
-.inner-container .projects-the-blocks .villas-header {
+.inner-container .projects-the-blocks .villas-img {
+  height: auto;
+  max-width: 1000px;
+  width: 100%;
+  margin-left: 50px;
+}
+.inner-container .projects-the-blocks .project-header {
   padding: 38px 57px;
   font-size: 24px;
   font-family: Roboto, Arial, sans-serif;
@@ -374,7 +403,7 @@ table {
   position: relative;
   display: inline-block;
   top: -57px;
-  left: 547px;
+  left: 718px;
 }
 .inner-container .projects-the-blocks .the-blocks-fix {
   margin-left: -25px;
@@ -393,48 +422,52 @@ table {
 .footer {
   background: #828282;
   height: 250px;
-  width: 54%;
+  max-width: 1000px;
+  min-width: 100%;
+}
+.footer .inner-footer-container {
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
+  width: 70%;
 }
-.footer .column {
+.footer .inner-footer-container .column {
   margin-left: 14px;
   margin-top: 60px;
   line-height: 25px;
 }
-.footer .column .header-text {
+.footer .inner-footer-container .column .header-text {
   font-size: 20px;
   font-weight: bold;
   font-family: Roboto, Arial, sans-serif;
   color: #FFFFFF;
   padding-bottom: 16px;
 }
-.footer .column .input {
+.footer .inner-footer-container .column .input {
   width: 100%;
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
   color: lightgray;
 }
-.footer .column .p-text {
+.footer .inner-footer-container .column .p-text {
   color: white;
   font-size: 12px;
   font-family: Roboto, Arial, sans-serif;
 }
-.footer .locations {
+.footer .inner-footer-container .locations {
   font-family: Roboto, Arial, sans-serif;
   color: #FFFFFF;
   line-height: 24px;
   margin-top: 62px;
   margin-right: 30px;
 }
-.footer .locations .states {
+.footer .inner-footer-container .locations .states {
   font-size: 20px;
   font-weight: bold;
   line-height: 26px;
 }
-.footer .locations .address-info {
+.footer .inner-footer-container .locations .address-info {
   font-size: 14px;
 }
 .copyright-one {
@@ -631,6 +664,7 @@ table {
     background: #98A4AF;
     height: 50px;
     z-index: 2;
+    /* Navigation System */
   }
   .header-container .nav-bar .flex-nav {
     display: flex;
@@ -647,6 +681,49 @@ table {
   .header-container .nav-bar .flex-nav .menu-icon {
     position: relative;
     top: 10px;
+  }
+  .header-container .nav-bar .menu {
+    display: none;
+    position: fixed;
+    margin-top: -50px;
+    max-width: 1000vw;
+    width: 100%;
+    height: 100vh;
+    background: #9AA5AF;
+    border: 1px solid #004D40;
+    color: white;
+    font-family: Roboto, Arial, sans-serif;
+    z-index: 4;
+    opacity: 0.9;
+  }
+  .header-container .nav-bar .menu .company-logo {
+    margin-left: 110px;
+    margin-top: -30px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Roboto, Arial, sans-serif;
+  }
+  .header-container .nav-bar .menu .navigation-system {
+    margin-top: 120px;
+    margin-left: -20px;
+    text-align: center;
+    line-height: 85px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  .header-container .nav-bar .menu .navigation-system .home-link {
+    text-decoration: none;
+    color: white;
+    position: relative;
+  }
+  .header-container .nav-bar .menu .navigation-system .services-link {
+    text-decoration: none;
+    color: white;
+  }
+  .header-container .nav-bar .menu .navigation-system .home .services,
+  .header-container .nav-bar .menu .navigation-system a:hover {
+    color: #222222;
   }
   .header-container .jumbotron-img {
     position: relative;
@@ -747,48 +824,51 @@ table {
   .footer {
     background: #828282;
     height: 250px;
-    width: 54%;
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
   }
-  .footer .column {
+  .footer .inner-footer-containter {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .inner-footer-containter .column {
     margin-left: 14px;
     margin-top: 60px;
     line-height: 25px;
   }
-  .footer .column .header-text {
+  .footer .inner-footer-containter .column .header-text {
     font-size: 20px;
     font-weight: bold;
     font-family: Roboto, Arial, sans-serif;
     color: #FFFFFF;
     padding-bottom: 16px;
   }
-  .footer .column .input {
+  .footer .inner-footer-containter .column .input {
     width: 100%;
     border-radius: 5px;
     padding: 10px;
     font-size: 16px;
     color: lightgray;
   }
-  .footer .column .p-text {
+  .footer .inner-footer-containter .column .p-text {
     color: white;
     font-size: 12px;
     font-family: Roboto, Arial, sans-serif;
   }
-  .footer .locations {
+  .footer .inner-footer-containter .locations {
     font-family: Roboto, Arial, sans-serif;
     color: #FFFFFF;
     line-height: 24px;
     margin-top: 62px;
     margin-right: 30px;
   }
-  .footer .locations .states {
+  .footer .inner-footer-containter .locations .states {
     font-size: 20px;
     font-weight: bold;
     line-height: 26px;
   }
-  .footer .locations .address-info {
+  .footer .inner-footer-containter .locations .address-info {
     font-size: 14px;
   }
   .copyright-one {
@@ -921,6 +1001,7 @@ table {
     color: #FFFFFF;
     position: relative;
     top: 10px;
+    left: 30px;
   }
   .header-container .nav-bar .flex-nav .block-div {
     width: 40%;
@@ -928,6 +1009,7 @@ table {
   .header-container .nav-bar .flex-nav .menu-icon {
     position: relative;
     top: 10px;
+    right: 70px;
   }
   .header-container .jumbotron-img {
     max-width: 100%;
@@ -943,7 +1025,7 @@ table {
     line-height: 35px;
     color: #FFFFFF;
     position: relative;
-    left: 15px;
+    left: 65px;
     top: -195px;
     width: 30%;
     z-index: 3;
@@ -1039,8 +1121,9 @@ table {
   .inner-container .projects .villas-img {
     max-width: 100%;
     height: 200px;
+    margin-left: 2px;
   }
-  .inner-container .projects .villas-header {
+  .inner-container .projects .project-header {
     padding: 38px 47px;
     font-size: 24px;
     font-family: Roboto, Arial, sans-serif;
@@ -1068,8 +1151,9 @@ table {
   .inner-container .projects-outskirts .villas-img {
     max-width: 100%;
     height: 200px;
+    margin-left: 1px;
   }
-  .inner-container .projects-outskirts .villas-header {
+  .inner-container .projects-outskirts .project-header {
     padding: 38px 47px;
     font-size: 24px;
     font-family: Roboto, Arial, sans-serif;
@@ -1097,8 +1181,9 @@ table {
   .inner-container .projects-the-blocks .villas-img {
     max-width: 100%;
     height: 200px;
+    margin-left: 2px;
   }
-  .inner-container .projects-the-blocks .villas-header {
+  .inner-container .projects-the-blocks .project-header {
     padding: 38px 40px;
     font-size: 24px;
     font-family: Roboto, Arial, sans-serif;
@@ -1124,55 +1209,56 @@ table {
     background: #828282;
     height: 700px;
     width: 54%;
-    margin: 0 auto;
+  }
+  .footer .inner-footer-container {
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
   }
-  .footer .column {
+  .footer .inner-footer-container .column {
     margin-left: 14px;
     margin-top: -30px;
     line-height: 25px;
   }
-  .footer .column .header-text {
+  .footer .inner-footer-container .column .header-text {
     font-size: 20px;
     font-weight: bold;
     font-family: Roboto, Arial, sans-serif;
     color: #FFFFFF;
     padding-bottom: 16px;
   }
-  .footer .column .input {
+  .footer .inner-footer-container .column .input {
     width: 93%;
     border-radius: 5px;
     padding: 10px;
     font-size: 16px;
     color: lightgray;
   }
-  .footer .column .p-text {
+  .footer .inner-footer-container .column .p-text {
     color: white;
     font-size: 12px;
     font-family: Roboto, Arial, sans-serif;
   }
-  .footer .locations {
+  .footer .inner-footer-container .locations {
     font-family: Roboto, Arial, sans-serif;
     color: #FFFFFF;
     line-height: 24px;
-    margin-top: -65px;
+    margin-top: -15px;
     margin-left: 20px;
+    padding-bottom: 40px;
   }
-  .footer .locations .states {
+  .footer .inner-footer-container .locations .states {
     font-size: 20px;
     font-weight: bold;
     line-height: 26px;
   }
-  .footer .locations .address-info {
+  .footer .inner-footer-container .locations .address-info {
     font-size: 14px;
   }
   .copyright-one {
     position: relative;
     padding-bottom: 110px;
     margin-top: -45px;
-    margin-left: 155px;
+    margin-left: 106px;
     font-size: 13px;
     font-family: Roboto, Arial, sans-serif;
     color: #FFFFFF;
